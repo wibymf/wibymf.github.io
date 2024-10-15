@@ -1,0 +1,135 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Fun font */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light pastel background */
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background: #a0d6e3; /* Pastel blue */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative; /* Needed for absolute positioning of toggle */
+}
+
+.profile-photo {
+    width: 150px; /* Increased size */
+    height: 150px; /* Increased size */
+    border-radius: 50%; 
+    border: 2px solid white; 
+    margin-bottom: 15px; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    background: #ffffff; /* White background for sections */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+h2 {
+    border-bottom: 2px solid #a0d6e3; /* Pastel blue */
+    padding-bottom: 5px;
+    font-weight: 600; /* Bold for headings */
+}
+
+ul {
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #f1f1f1; /* Light gray */
+}
+
+/* Night Mode Styles */
+body.night-mode {
+    background-color: #555; /* Darker gray */
+    color: #f4f4f4;
+}
+
+body.night-mode section {
+    background: #666; /* Darker section background */
+    color: #f4f4f4;
+}
+
+/* Toggle Switch Styles */
+.switch {
+    position: absolute; /* Move to the top right of the header */
+    top: 10px;
+    right: 10px;
+    width: 40px; /* Adjusted width */
+    height: 24px; /* Adjusted height */
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e3e3e3; /* Light gray */
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px; /* Smaller size */
+    width: 20px; /* Smaller size */
+    left: 2px; /* Adjusted for smaller size */
+    bottom: 2px; /* Adjusted for smaller size */
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #a0d6e3; /* Pastel blue */
+}
+
+input:checked + .slider:before {
+    transform: translateX(16px); /* Adjusted for smaller size */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 10px;
+    }
+}

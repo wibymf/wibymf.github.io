@@ -1,1 +1,112 @@
-Hello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiby's Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="assets/img/profile.jpg" alt="Your Name" class="profile-photo">
+        <h1>Wiby Mahan Faqih</h1>
+        <label class="switch">
+            <input type="checkbox" id="toggle">
+            <span class="slider"></span>
+        </label>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi! I'm Wiby, a Software Engineer. I specialize in backend development and have a strong passion for creating robust and efficient systems. I enjoy tackling complex challenges and optimizing server-side performance. I'm always eager to learn new technologies and improve my skills.</p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li>
+                <h3>Software Engineer - Netzme</h3>
+                <p><em>Nov 2023 - Present</em></p>
+                <p>Description of your role and achievements.</p>
+            </li>
+            <li>
+                <h3>Software Engineer - Indodana</h3>
+                <p><em>Nov 2022 - Oct 2023</em></p>
+                <p>Description of your role and achievements.</p>
+            </li>
+            <li>
+                <h3>Software Engineer - Mamikos</h3>
+                <p><em>Mar 2020 - Nov 2022</em></p>
+                <p>Description of your role and achievements.</p>
+            </li>
+            <li>
+                <h3>Software Engineer - Alterra</h3>
+                <p><em>Jun 2019 - Mar 2020</em></p>
+                <p>Description of your role and achievements.</p>
+            </li>
+            <li>
+                <h3>Software Engineer - Bank Bukopin</h3>
+                <p><em>May 2016 - May 2019</em></p>
+                <p>Description of your role and achievements.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <h3>Sepuluh Nopember Institute of Technology Surabaya</h3>
+                <p><em>2011 - 2015</em></p>
+                <p>Bachelor's degree - Computer Science</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Skill 1</li>
+            <li>Skill 2</li>
+            <li>Skill 3</li>
+            <li>Skill 4</li>
+            <li>Skill 5</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <h3>Project Title 1</h3>
+                <p>Description of the project, technologies used, and your role.</p>
+            </li>
+            <li>
+                <h3>Project Title 2</h3>
+                <p>Description of the project, technologies used, and your role.</p>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Wiby. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('toggle');
+        toggle.addEventListener('change', () => {
+            document.body.classList.toggle('night-mode', toggle.checked);
+        });
+    </script>
+</body>
+</html>
